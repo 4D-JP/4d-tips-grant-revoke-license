@@ -24,3 +24,20 @@
 Designer/Administrator以外のユーザーは，ユーザー/グループを管理することができません。アクセス権をDesigner/Administratorに「昇格」するためには，[CHANGE CURRENT USER](http://doc.4d.com/4Dv16/4D/16/CHANGE-CURRENT-USER.301-3036847.ja.html)コマンドを使用するか，``Shift``キーを押しながら再度アプリケーションを開き，ログイン画面からDesigner/Administratorとしてログインします。
 
 <img src="./login.png" width="300" />
+
+## アクセス権が与えられるタイミング
+
+ログインまたはCHANGE CURRENT USERコマンドの使用により，カレントユーザーが確定した時点で，クライアントマシンのグループすなわちアクセス権が与えられます。カレントユーザーは，[Current user](http://doc.4d.com/4Dv16/4D/16/Current-user.301-3036855.ja.html)またはサーバーの管理画面で確認することができます。
+
+<img src="./user.png" width="600" />
+
+特定のライセンスがインストールされているかどうかは，[Is license available](http://doc.4d.com/4Dv16/4D/16/Is-license-available.301-3036846.ja.html)で確認することができます。
+
+特定のライセンスを使用できるかどうかは，[Get plugin access](http://doc.4d.com/4Dv16/4D/16/Get-plugin-access.301-3036854.ja.html)で確認することができます。
+
+特定のライセンスを使用するため，別のグループに昇格するためには，[CHANGE CURRENT USER](http://doc.4d.com/4Dv16/4D/16/CHANGE-CURRENT-USER.301-3036847.ja.html)を使用します。
+
+4D Writeのライセンス数が接続ユーザー数よりも少ない場合，ログインまたはCHANGE CURRENT USERコマンドを使用した順にライセンスが配分されてゆきます。
+
+4D Writeプラグインエリアおよび4D Write Proエリアは，フォームが開かれた時にアクセス権がチェックされるため，途中でアクセス権を昇格した場合，各エリアが使用できるようになるのは次に開かれたフォームからとなります。また，アクセス権を昇格した時点でライセンスが余っていなかった場合，アクセス権を持つ別のユーザーがログアウトまたは降格した後，改めてログインまたはCHANGE CURRENT USERコマンドを使用する必要があります。
+
