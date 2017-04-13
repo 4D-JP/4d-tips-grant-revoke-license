@@ -19,6 +19,8 @@
 
 <img src="./default.png" width="600" />
 
+**注記**: D Writeプラグインがインストールされていない場合，ツールボックスのグループ管理画面に4D Writeのライセンスが表示されません。デスクトップ版の場合，4D Writeプラグインは，アプリケーションに組み込まれているので，常にライセンスが表示されます。クライアント/サーバー版の場合，ストラクチャと同じ階層の``Plugins``フォルダーに4D Writeプラグインがインストールされている必要があります。
+
 Designer/Administrator以外のユーザーは，ユーザー/グループを管理することができません。アクセス権をDesigner/Administratorに「昇格」するためには，[CHANGE CURRENT USER](http://doc.4d.com/4Dv16/4D/16/CHANGE-CURRENT-USER.301-3036847.ja.html)コマンドを使用するか，``Shift``キーを押しながら再度アプリケーションを開き，ログイン画面からDesigner/Administratorとしてログインします。
 
 <img src="./login.png" width="300" />
