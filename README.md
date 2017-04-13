@@ -46,3 +46,5 @@ Designer/Administrator以外のユーザーは，ユーザー/グループを管
 v15で作られた簡単なアプリケーションです。デフォルトユーザー「書けない人」には，4D Writeライセンスが与えられていません。4D Writeプラグインエリアまたは4D Write Proエリアを使用するためには，「書ける人」に昇格する必要があります。アクセス権が与えられても，同一フォーム上に存在する4D Write Proエリアは使用できません，しかし，メニュー「Demo」から開いたフォームでは，使用することができます。
 
 <img src="./screenshot.png" width="600" />
+
+https://github.com/4D-JP/4d-tips-grant-revoke-license/releases/tag/1.0.0
