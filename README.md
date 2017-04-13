@@ -13,12 +13,12 @@
 
 4D Write Proに対するアクセス権を管理するためには，まず，グループを作成し，そのグループに4D Writeライセンスを与えます。この例では，グループ「書ける」に4D Writeライセンスが与えられています。グループ「書けない」には，4D Writeライセンスが与えられていません。次に，ユーザーを作成し，グループに所属させます。この例では，ユーザー「書ける人」がグループ「書ける」に所属し，ユーザー「書けない人」はグループ「書けない」に所属しています。
 
-<img src="./group.png" width="400" />
+<img src="./group.png" width="600" />
 
 最小限のアクセス権を有する標準のユーザーを[デフォルトユーザー](http://doc.4d.com/4Dv16/4D/16/Setting-a-Default-User.300-3049055.ja.html)に指定することにより，ログイン画面を省略することもできます。この例では，「書けない人」がデフォルトユーザーに設定されています。
 
-![default](default.png | width=400)
+<img src="./default.png" width="600" />
 
 Designer/Administrator以外のユーザーは，ユーザー/グループを管理することができません。アクセス権をDesigner/Administratorに「昇格」するためには，[CHANGE CURRENT USER](http://doc.4d.com/4Dv16/4D/16/CHANGE-CURRENT-USER.301-3036847.ja.html)コマンドを使用するか，``Shift``キーを押しながら再度アプリケーションを開き，ログイン画面からDesigner/Administratorとしてログインします。
 
-![login](login.png | width=400)
+<img src="./login.png" width="600" />
